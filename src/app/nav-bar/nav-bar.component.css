@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 2rem;
+
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+ 
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  router-outlet {
+    padding: 20px;
+  }
+  
+ 

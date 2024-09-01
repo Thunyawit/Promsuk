@@ -1,0 +1,47 @@
+/* แถวที่ 1: รูปภาพขนาดใหญ่ */
+.banner {
+    width: 100%;
+    /* ปรับขนาดตามต้องการ */
+    ;
+  }
+  
+  .banner img {
+    width: 100%;
+    height:auto;
+    display: flex;
+  }
+  
+  /* แถวที่ 2-4: แบ่งเป็น 3 ส่วน */
+  .row {
+    display: flex ;
+   
+    margin-bottom:20px;
+  }
+  
+  .column {
+    flex: 0.5;
+    margin: 0 10px;
+  }
+  .column img{
+    width:50%;
+  }
+  .box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  .box:hover{
+    color: blue;
+    
+  }
+
+
+  .column img:hover{
+    width:52%;
+  }
+
+
+  .column:hover{
+    width: 55%;
+}
