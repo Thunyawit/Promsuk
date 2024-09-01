@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductComponent } from './product/product.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { NikeComponent } from './nike/nike.component';
+import { AdidasComponent } from './adidas/adidas.component';
+import { MizunoComponent } from './mizuno/mizuno.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ContactComponent } from './contact/contact.component';
     FooterComponent,
     ProductComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NikeComponent,
+    AdidasComponent,
+    MizunoComponent
   ],
   imports: [
     BrowserModule,

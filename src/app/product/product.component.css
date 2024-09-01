@@ -1,0 +1,17 @@
+.container-fluid{
+text-align: center;
+margin: 0  10rem;
+}
+
+nav {
+    display: flex;
+}
+
+.col a{
+    color: #333;
+    text-decoration: none;
+}
+
+.col a:hover{
+    text-decoration: underline;
+}
