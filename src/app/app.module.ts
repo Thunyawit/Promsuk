@@ -12,6 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NikeComponent } from './nike/nike.component';
 import { AdidasComponent } from './adidas/adidas.component';
 import { MizunoComponent } from './mizuno/mizuno.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MizunoComponent } from './mizuno/mizuno.component';
     ContactComponent,
     NikeComponent,
     AdidasComponent,
-    MizunoComponent
+    MizunoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

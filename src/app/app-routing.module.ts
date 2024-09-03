@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NikeComponent } from './nike/nike.component';
 import { AdidasComponent } from './adidas/adidas.component';
 import { MizunoComponent } from './mizuno/mizuno.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'nike', component: NikeComponent},
   { path: 'adidas', component: AdidasComponent},
-  { path: 'mizuno', component: MizunoComponent}
+  { path: 'mizuno', component: MizunoComponent},
+  { path: 'login', component:LoginComponent}
 ];
 
 @NgModule({
