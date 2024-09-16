@@ -1,0 +1,40 @@
+<div class="checkout-container">
+    <h1>ชำระเงิน</h1>
+  
+    <!-- สรุปคำสั่งซื้อ -->
+    <div class="order-summary">
+      <h2>สรุปคำสั่งซื้อ</h2>
+      
+    </div>
+  
+    <!-- ฟอร์มข้อมูลการจัดส่ง -->
+    <div class="shipping-info">
+      <h2>ข้อมูลการจัดส่ง</h2>
+      <form (ngSubmit)="onSubmit()">
+        <label for="name">ชื่อ:</label>
+        <input type="text"  name="name" required>
+  
+        <label for="address">ที่อยู่:</label>
+        <textarea id="address"  name="address" required></textarea>
+  
+        <label for="phone">เบอร์โทรศัพท์:</label>
+        <input type="tel" id="phone" name="phone" required>
+  
+        <!-- วิธีการชำระเงิน -->
+        <h2>วิธีการชำระเงิน</h2>
+        <div class="payment-method">
+          <input type="radio" id="credit-card" name="payment_method"  value="credit-card" checked>
+          <label for="credit-card">บัตรเครดิต/เดบิต</label><br>
+  
+          <input type="radio" id="bank-transfer" name="payment_method"  value="bank-transfer">
+          <label for="bank-transfer">โอนเงินผ่านธนาคาร</label><br>
+  
+          <input type="radio" id="cash-on-delivery" name="payment_method"  value="cash-on-delivery">
+          <label for="cash-on-delivery">ชำระเงินปลายทาง</label>
+        </div>
+  
+        <button type="submit">ยืนยันการสั่งซื้อ</button>
+      </form>
+    </div>
+  </div>
+  

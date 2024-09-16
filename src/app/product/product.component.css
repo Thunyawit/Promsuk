@@ -1,3 +1,14 @@
+.banner {
+    width: 100%;
+    /* ปรับขนาดตามต้องการ */
+    ;
+  }
+  
+  .banner img {
+    width: 100%;
+    height:auto;
+    display: flex;
+  }   
 .container-fluid{
 text-align: center;
 margin: 0  10rem;
@@ -14,4 +25,5 @@ nav {
 
 .col a:hover{
     text-decoration: underline;
+    
 }

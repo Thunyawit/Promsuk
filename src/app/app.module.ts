@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,12 @@ import { NikeComponent } from './nike/nike.component';
 import { AdidasComponent } from './adidas/adidas.component';
 import { MizunoComponent } from './mizuno/mizuno.component';
 import { LoginComponent } from './login/login.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+
+const routes: Routes = [
+  { path: 'checkout', component: CheckoutComponent },
+  // เส้นทางอื่นๆ
+];
 
 @NgModule({
   declarations: [
@@ -26,15 +33,14 @@ import { LoginComponent } from './login/login.component';
     NikeComponent,
     AdidasComponent,
     MizunoComponent,
-    LoginComponent
+    LoginComponent,
+    CheckoutComponent // เพิ่มที่นี่
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    provideClientHydration()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

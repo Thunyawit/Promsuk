@@ -8,6 +8,7 @@ import { NikeComponent } from './nike/nike.component';
 import { AdidasComponent } from './adidas/adidas.component';
 import { MizunoComponent } from './mizuno/mizuno.component';
 import { LoginComponent } from './login/login.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'nike', component: NikeComponent},
   { path: 'adidas', component: AdidasComponent},
   { path: 'mizuno', component: MizunoComponent},
-  { path: 'login', component:LoginComponent}
+  { path: 'login', component:LoginComponent},
+  { path: 'checkout', component:CheckoutComponent}
 ];
 
 @NgModule({
