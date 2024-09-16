@@ -1,0 +1,23 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
+    gap: 20px; /* ระยะห่างระหว่างสินค้า */
+  }
+  
+  .product-item {
+    text-align: center;
+  }
+  
+  .product-item img {
+    width: 100%;
+    max-width: 200px; /* ปรับขนาดรูปภาพ */
+    height: auto;
+    
+    .product-item p {
+        margin-bottom: 10px;
+        line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+      }
+      
+  }
+  
+  
