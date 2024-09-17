@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,8 @@ import { AdidasComponent } from './adidas/adidas.component';
 import { MizunoComponent } from './mizuno/mizuno.component';
 import { LoginComponent } from './login/login.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { ProductService } from './product.service';
+
 
 const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent },
@@ -34,13 +37,14 @@ const routes: Routes = [
     AdidasComponent,
     MizunoComponent,
     LoginComponent,
-    CheckoutComponent // เพิ่มที่นี่
+    CheckoutComponent, //เพิ่มที่นี่
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

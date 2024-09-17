@@ -4,6 +4,10 @@
     <!-- สรุปคำสั่งซื้อ -->
     <div class="order-summary">
       <h2>สรุปคำสั่งซื้อ</h2>
+      <div *ngIf="selectedShoeImage">
+        <h3>รองเท้าที่คุณเลือก:</h3>
+        <img [src]="selectedShoeImage" alt="Selected Shoe" width="200px">
+      </div>
       
     </div>
   

@@ -10,6 +10,7 @@ import { MizunoComponent } from './mizuno/mizuno.component';
 import { LoginComponent } from './login/login.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'product', component: ProductComponent },
@@ -19,11 +20,13 @@ const routes: Routes = [
   { path: 'adidas', component: AdidasComponent},
   { path: 'mizuno', component: MizunoComponent},
   { path: 'login', component:LoginComponent},
-  { path: 'checkout', component:CheckoutComponent}
+  { path: 'checkout', component:CheckoutComponent},
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
+
 export class AppRoutingModule { }
